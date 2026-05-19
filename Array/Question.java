@@ -1204,27 +1204,29 @@ package Array;
 
 public class Question{
     public static void main(String[] args) {
-        int arr[] = {23,45,435,653,535,343,4,3,4538,465,65,236,47,5,4,32,2};
+        int arr[] = {23,45,56,76,88,97,434,665};
 
-        for(int i= 0;i < arr.length;i++){
+        for(int i = 0;i < arr.length-1;i++){
             boolean swapped = false;
-            for(int j =0;j<arr.length-1-i;j++){
 
-                if(arr[j] > arr[j+1]){
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+
+                if (arr[j] > arr[j + 1]) {
 
                     int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
 
                     swapped = true;
                 }
             }
-            if(swapped = false){
+
+            if (swapped == false) {
                 break;
             }
         }
-        for(int r :arr){
-            System.out.print(r+ " ");
+        for(int i :arr){
+            System.out.print(i + " ");
         }
     }
 }
