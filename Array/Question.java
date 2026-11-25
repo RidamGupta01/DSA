@@ -1202,31 +1202,48 @@ package Array;
 //     }
 // }
 
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {23,45,56,76,88,97,434,665};
+
+//         for(int i = 0;i < arr.length-1;i++){
+//             boolean swapped = false;
+
+//             for (int j = 0; j < arr.length - 1 - i; j++) {
+
+//                 if (arr[j] > arr[j + 1]) {
+
+//                     int temp = arr[j];
+//                     arr[j] = arr[j + 1];
+//                     arr[j + 1] = temp;
+
+//                     swapped = true;
+//                 }
+//             }
+
+//             if (swapped == false) {
+//                 break;
+//             }
+//         }
+//         for(int i :arr){
+//             System.out.print(i + " ");
+//         }
+//     }
+// }
+
+// Qn. Two sum brute force method
+
 public class Question{
     public static void main(String[] args) {
-        int arr[] = {23,45,56,76,88,97,434,665};
+        int arr[] = {2,4,5,6,7,8,9};
+        int target = 9;
 
-        for(int i = 0;i < arr.length-1;i++){
-            boolean swapped = false;
-
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-
-                if (arr[j] > arr[j + 1]) {
-
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-
-                    swapped = true;
+        for(int i = 0;i < arr.length;i++){
+            for(int j = 0;j< arr.length;j++){
+                if(arr[i] + arr[j] == target){
+                    return (i ,j);
                 }
             }
-
-            if (swapped == false) {
-                break;
-            }
-        }
-        for(int i :arr){
-            System.out.print(i + " ");
         }
     }
 }

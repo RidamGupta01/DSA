@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Deletion",
+            "request": "launch",
+            "mainClass": "LinkedList.Deletion",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Addition",
+            "request": "launch",
+            "mainClass": "LinkedList.Addition",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "TwoDArray",
+            "request": "launch",
+            "mainClass": "TwoDArray",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "thirdMax",
+            "request": "launch",
+            "mainClass": "Array.thirdMax",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
             "name": "Programm",
             "request": "launch",
             "mainClass": "Array.Programm",
